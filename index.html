@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Travel Form</h1>
+    <p class="description">Please take your time to answer the survey questions</p>
+
+    <form class="survey-form">
+        <div class="form-group">
+            <label class="name-label">Full Name</label>
+            <input type="text" class="form-control" placeholder="Enter your full name" required>
+        </div>
+        <div class="form-group">
+            <label class="email-label">Email</label>
+            <input type="email" class="form-control" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+            <label class="age-label">Age</label>
+            <input type="number" class="form-control" placeholder="Select your age" required min="19" max="60">
+        </div>
+        <div class="form-group">
+            <label for="gender" class="gender-label">Gender</label>
+            <select id="gender" class="form-control" required>
+                <option value disabled selected>Select your gender</option>
+                <option value="female">Female</option>
+                <option value="male">Male</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label class="vaccine-label">Do you like to travel?</label>
+            <input id="yes" type="radio" value="yes" class="form-radio"><label for="yes">Yes</label>
+            <input id="no" type="radio" value="no" class="form-radio"><label for="no">Yes,Yes</label>
+        </div>
+        <div class="form-group">
+            <label for="state" class="state-label">Last countrie you have visited?</label>
+            <select id="state" class="form-control" required>
+                <option value disabled selected>Select a country</option>
+                <option value="WPKL">England</option>
+                <option value="Selangor">America</option>
+                <option value="Melaka">Melaka</option>
+                <option value="Negeri Sembilan">France</option>
+                <option value="Perak">Italy</option>
+                <option value="Pahang">Turkey</option>
+                <option value="Johor Bahru">Russia</option>
+                <option value="Pulau Pinang">Poland</option>
+                <option value="Kedah">Germany</option>
+                <option value="Perlis">Australia</option>
+                <option value="Terengganu">Japan</option>
+                <option value="Kelantan">China</option>
+                <option value="Sabah">Korea</option>
+                <option value="Sarawak">Israel</option>
+            </select>
+        </div>
+        <div>
+            <p>How much do you spend for travel</p>
+            <input id="yes" type="radio" value="yes" class="form-radio"><label for="500">0-500$</label>
+            <input id="yes" type="radio" value="yes" class="form-radio"><label for="yes">500-1000$</label>
+            <input id="yes" type="radio" value="yes" class="form-radio"><label for="yes">1000-1500$</label>
+        </div>
+        <div class="form-group">
+            <label class="type-label">What do you liked the most?</label>
+            
+            <input type="text" class="form-control" placeholder="Impresion" required>
+            
+            <input type="text" class="form-control" placeholder="Impresion" required>
+            
+            <input type="text" class="form-control" placeholder="Impresion" required>
+        </div>
+        <div class="form-group">
+            <p>Write an advice for others</p>
+            <textarea placeholder="Type your condition..." class="form-textarea"></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="submit-button">Submit</button>
+        </div>
+        
+    </form>
+    <script src="index.js"></script>
+</body>
+</html>
